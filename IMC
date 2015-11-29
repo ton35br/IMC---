@@ -1,0 +1,43 @@
+# include <stdio.h>
+# include <stdlib.h>
+/* Programa para saber IMC Indice de Massa corporal, onde será digitado o peso e logo depois altura, onde o programa irá informa
+a condição que você se encontra com relação ao peso*/
+main ( ) {
+     
+     float p, a, imc;
+     printf(" Digite o seu peso = ");
+     scanf("%f", &p);
+     printf(" Digite o sua altura = ");
+     scanf("%f", &a);
+
+     imc= p/(a*a);     
+          
+     if (imc<17)
+        printf("Muito abaixo do peso\n");
+     else 
+     if (imc>=17 && imc<=18.49)
+        printf("Abaixo do Peso\n");
+     
+     else 
+     if (imc>=18.5 && imc<=24.99)
+        printf("Peso Normal\n");
+     
+     else 
+     if (imc>=25 && imc<=29.99)
+        printf("Acima do Peso\n");
+     
+     else 
+     if (imc>=30 && imc<=34.99)
+        printf("Obesidade I\n");
+     
+     else 
+     if (imc>=35 && imc<=39.99)
+        printf("Obesidade II (Severa)\n");
+     
+     else 
+     if (imc>40)
+        printf("Obesidade III (Morbida)\n");
+       
+     
+     system("pause");
+     }
